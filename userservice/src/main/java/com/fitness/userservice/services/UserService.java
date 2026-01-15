@@ -38,7 +38,7 @@ public class UserService {
         user.setFirstName(registerRequest.getFirstName());
         user.setLastName(registerRequest.getLastName());
         user.setPassword(registerRequest.getPassword());
-        user.setPassword(registerRequest.getPassword());
+        //user.setPassword(registerRequest.getPassword());
 
         User savedUser=userRepository.save(user);
         UserResponse userResponse=new UserResponse();
